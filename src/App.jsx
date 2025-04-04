@@ -17,8 +17,8 @@ export default function App(){
         <main id="main">
         <div id="MyName" className="contents">
             <h2>Who am I?</h2>
-            안녕하세요. 저의 이름은 <b className="special">정목진</b> 입니다.<br/>
-            저의 MBTI는 <b className="special">ENTJ</b>로 활발한 성격을 가지고 있습니다!<br/>
+            안녕하세요. 저의 이름은 <b>정목진</b> 입니다.<br/>
+            저의 MBTI는 <b>ENTJ</b>로 활발한 성격을 가지고 있습니다!<br/>
             22학번으로 소프트웨어학과 2학년 재학 중입니다.<br/>
             현재 수유에서 혼자 자취하는 중이며 자취하고 잘취하는 남자가 컨셉입니다.<br/>
             ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ<br/>
