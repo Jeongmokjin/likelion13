@@ -2,10 +2,6 @@ import { useState } from 'react';
 
 function TodoList({todos,onToggle,onRemove}){
 
-    function boxCheck(){
-        onToggle(todos.id);
-    }
-
         return(
             <>
             {todos.map((todo)=>(
