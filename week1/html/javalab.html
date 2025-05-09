@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자바 연구</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h2>계산기</h2>
+    <hr>
+    <script>
+        function add (a,b){
+            let price = a+b
+            return price
+        }
+        function minus (a,b){
+            let price = a-b
+            return price
+        }
+        function multiply (a,b){
+            let price = a*b
+            return price
+        }
+        function devide (a,b){
+            let price = a/b
+            return price
+        }
+        let x= prompt("x값 입력:")
+        x=parseInt(x)
+        let y= prompt("y값 입력:")
+        y=parseInt(y)
+        let n=0
+        do{
+            let how=prompt("연산 입력:")
+            if(how=="+"){
+                document.write("값:"+add(x,y))
+                n=1
+            } else if(how=="-"){
+                document.write("값:"+minus(x,y))
+                n=1
+            } else if(how=="*"){
+                document.write("값:"+multiply(x,y))
+                n=1
+            } else if(how=="/"){
+                document.write("값:"+devide(x,y))
+                n=1
+            } else{
+                document.write("연산을 다시 입력해주세요.<br>")
+            }
+        }while(n==0)
+
+    </script>
+    
+    
+</body>
+</html>
