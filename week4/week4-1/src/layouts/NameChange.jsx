@@ -54,7 +54,7 @@ function NameChange(){
     }
     function EnterDown(e){ //엔터 누를시 실행 단,값이 입력된게 하나도 없으면 행동X
         if(e.key==="Enter"){
-            if(text.name!=""||text.age!=""||text.email!=""||text.from!=""){
+            if(text.name!="" || text.age!="" || text.email!="" || text.from!=""){
                 if(text.name!=""){  //입력된 값만 적용, 구현은 했는데 비효율적인듯
                     localStorage.setItem("name",text.name);
                 }
