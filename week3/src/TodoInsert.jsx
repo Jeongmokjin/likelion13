@@ -6,12 +6,14 @@ function TodoInsert({onInsert}){
     function handleText(e){
         setText(e.target.value);
     }
+
     function plusTodo(){
         if(text !== ""){
         onInsert(text);
         setText("");
         }
     }
+    
     function pressEnter(e){
         if(e.key=="Enter"){
             onInsert(text);
