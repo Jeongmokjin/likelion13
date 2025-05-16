@@ -1,8 +1,6 @@
 import { useState } from 'react';
 
 function TodoList({todos,onToggle,onRemove}){
-
-
         return(
             <>
             {todos.map((todo)=>(
