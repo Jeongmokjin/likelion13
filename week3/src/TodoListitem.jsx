@@ -1,5 +1,4 @@
 function TodoListitem(props){
-    todos=text
-
+    todos=textgit
 }
 export default TodoListitem;
