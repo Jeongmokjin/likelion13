@@ -34,7 +34,7 @@ function Name({name,age,email,from}){
         backgroundColor:"yellowgreen",
     };
     
-    function NameChange(){  //라우팅 함수수
+    function NameChange(){  //라우팅 함수
         navigate("/Mylayout/NameChange");
     }
 

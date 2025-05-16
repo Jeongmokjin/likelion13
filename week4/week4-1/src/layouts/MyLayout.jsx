@@ -7,7 +7,7 @@ function MyLayout(){
     return(
         <Layout>
         <Navbar/>
-        <Name name="사용자"/>
+        <Name />
         </Layout>
     );
 }
