@@ -11,6 +11,7 @@ function Header(){ //말 그대로 헤더임
                 <NavButton name="Main" link="/"/>
                 <NavButton name="Clothing" link="/ClothingPage"/>
                 <NavButton name="Shoes" link="/ShoesPage"/>
+                <NavButton name="Adimin" link="/AdminPage"/>
             </NavBar>
             <Search/>
         </H>

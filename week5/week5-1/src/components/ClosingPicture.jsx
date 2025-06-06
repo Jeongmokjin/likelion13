@@ -53,7 +53,7 @@ const Img=styled.img`
 height: 601px;
 flex-shrink: 0;
 border-radius: 68px 0px 0px 68px;
-background: linear-gradient(180deg, rgba(254, 254, 254, 0.00) 53.37%, rgba(254, 254, 254, 0.45) 100%), url(<path-to-image>) lightgray 50% / contain no-repeat, #E9E9E9;
+background: linear-gradient(180deg, rgba(254, 254, 254, 0.00) 53.37%, rgba(254, 254, 254, 0.45) 100%), #E9E9E9;
 margin-left: auto;
 `
 
