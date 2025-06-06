@@ -13,7 +13,6 @@ function AdminProducts({data, getClothes, getShoes,what}){
         image:"" ,name: "",rating:"",review:"",price:"",soldout:"",
         color:"",size:"",gender:"", type: "" });
     const [filterForm, setFilter] = useState({  color:"",size:"",gender:"", type: "" });
-    const [productData, setProductData] = useState(data);
 
 
   function Drop(){
@@ -24,9 +23,10 @@ function AdminProducts({data, getClothes, getShoes,what}){
     setSelect(value);
     setOpen(!open);
   }
- 
+
+  let sortingProduct=data; 
   if(select !=="기본"){ 
-    productData=[...data].sort((a,b)=>{ 
+    sortingProduct=[...data].sort((a,b)=>{ 
       return select==="최신순" ? b.id - a.id : a.id - b.id  
     }); 
   }
@@ -112,7 +112,11 @@ function AdminProducts({data, getClothes, getShoes,what}){
     axios
       .get(`http://localhost:3000/${what}`, {params:filterData})
       .then((res) => {
-        setProductData(res.data); 
+        if(what=="clothes"){
+          getClothes(res.data)
+        } else{
+          getShoes(res.data)
+        }
         setFilter({ color:"",size:"",gender:"", type: ""});
       })
       .catch((err) => {
@@ -160,7 +164,7 @@ function AdminProducts({data, getClothes, getShoes,what}){
     </ConditionBar>
     
     <ProductsBox>
-        {productData.map(product=>(
+        {sortingProduct.map(product=>(
         <ProductBox>
             <ProductImg src={product.image}/>
             <ProductName>{product.name}</ProductName>
