@@ -75,7 +75,6 @@ const Img=styled.img`
     height: ${(props)=>props.height};
     flex-shrink: 0; 
     border-radius: 15px;
-    background: url(<path-to-image>) lightgray 50% / contain no-repeat;
     box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.20);
     left: ${(props)=>props.left};
     top: ${(props)=>props.top};

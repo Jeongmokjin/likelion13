@@ -31,7 +31,6 @@ const Pic=styled.img`
     flex-shrink: 0;
     aspect-ratio: 840/473;
     border-radius: 25px;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 `
 
 const PicGroup=styled.div`

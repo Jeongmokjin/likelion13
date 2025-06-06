@@ -99,7 +99,6 @@ const Img=styled.img`
     height: 366px;
     flex-shrink: 0;
     aspect-ratio: 1/1;
-    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
 `
 const Review1=styled.p`
     color: ${(props) => props.color || 'black'};
